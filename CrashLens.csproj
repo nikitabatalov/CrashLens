@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>CrashLens</AssemblyName>
+    <RootNamespace>CrashLens</RootNamespace>
+    <ApplicationIcon>Assets\CrashLens.ico</ApplicationIcon>
+    <Version>1.0.2</Version>
+    <Company>Nikita Batalov</Company>
+    <Authors>Nikita Batalov</Authors>
+    <Product>CrashLens</Product>
+    <Description>Локальный монитор ошибок Windows и BSOD.</Description>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.EventLog" Version="8.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\CrashLensLogo.png" />
+    <Resource Include="Assets\CrashLens.ico" />
+  </ItemGroup>
+</Project>
